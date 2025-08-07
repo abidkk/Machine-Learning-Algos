@@ -22,7 +22,18 @@ def home():
             features = [area, bedrooms, bathrooms, stories, guestroom, basement]
             prediction = int(model.predict([features])[0])
 
-            return render_template('form.html', prediction=f"Predicted Price: PKR {prediction:,}")
+            return render_template(
+                'form.html',
+                prediction=f" PKR {prediction:,}",
+                area=area,
+                bedrooms=bedrooms,
+                bathrooms=bathrooms,
+                stories=stories,
+                guestroom=guestroom,
+                basement=basement
+            )
+
+            # return render_template('form.html', prediction=f"Predicted Price: PKR {prediction:,}")
         except:
             return render_template('form.html', prediction="⚠️ Invalid input. Please try again.")
 

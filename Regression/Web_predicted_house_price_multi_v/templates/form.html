@@ -4,19 +4,28 @@
 <head>
     <title>House Price Predictor</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
 </head>
-
 
 <body class="max-h-screen">
     <div class="header p-1 px-10 flex justify-between items-center shadow-md mb-1 font-sans">
-        <img src="{{ url_for('static', filename='assets/logo_side_name3.png') }}" alt="DN logo" class="w-64 h-20 ">
+        <a href="https://www.digitalneurons.site/"> <img
+                src="{{ url_for('static', filename='assets/logo_side_name3.png') }}" alt="DN logo"
+                class="w-64 h-20 "></a>
         <h2 class=" text-4xl font-bold ">House Price Prediction</h2>
 
-        <div class="icons">
-            <a href="">
+        <div class="icons flex gap-2 ">
+            <a
+                href="https://github.com/abidkk/Machine-Learning-Algos/tree/main/Regression/Web_predicted_house_price_multi_v">
                 <img src="{{ url_for('static', filename='assets/icons/social/github.png') }}" alt="github"
-                    class="w-8 h-8 ">
+                    class="w-8 h-8  cursor-pointer hover:scale-105 duration-500">
+            </a>
+            <a href="https://www.linkedin.com/in/abidkk/">
+                <img src="{{ url_for('static', filename='assets/icons/social/linkedin.png') }}" alt="linkedin"
+                    class="w-8 h-8  cursor-pointer hover:scale-105 duration-500">
+            </a>
+            <a href="https://www.youtube.com/@digitalneurons5">
+                <img src="{{ url_for('static', filename='assets/icons/social/youtube.png') }}" alt="youtube"
+                    class="w-8 h-8 cursor-pointer hover:scale-105 duration-500">
             </a>
         </div>
     </div>
@@ -35,6 +44,7 @@
             <p class="font-bold text-gray-800 text-center  p-2">Please provide below details to predict House
                 Price</p>
             <div class="house_form py-5">
+                <!-- Form -->
                 <form method="POST" class="bg-gray-50 p-4 grid grid-cols-3 rounded-md ">
                     <div class="f1">
                         <label class="text-gray-800">Area (sq ft):</label><br>
@@ -83,9 +93,11 @@
 
                     </div>
 
+                    <button type="submit" class="cursor-pointer bg-transparent border-none">
+                        <img src="{{ url_for('static', filename='assets/icons/coin.png') }}" alt="predict"
+                            class="w-14 h-14 my-2 hover:shadow-md duration-500 rounded-full ">
+                    </button>
 
-                    <input type="submit" value="Predict"
-                        class="bg-blue-800  py-2 text-gray-200 rounded-sm cursor-pointer">
                 </form>
             </div>
 
@@ -93,57 +105,90 @@
             <div class="icon_setion flex gap-4 bg-gray-50 px-2 rounded-sm justify-center py-2 ">
 
                 <!-- 01 area -->
-                <div class="area-sec bg-gray-100 rounded-md py-2 px-4 text-center ">
-                    <p class="py-1 underline">Area</p>
+                <div
+                    class="area-sec bg-gray-100 rounded-md py-2 px-4 text-center w-28 flex flex-col justify-center items-center ">
+                    <p class="py-1 underline">Area (Sqft)</p>
                     <img src="{{ url_for('static', filename='assets/icons/area.png') }}" alt="bedroom"
-                        class="w-14 h-14 my-2">
-                    <p class="pt-2 border-t-2 border-white text-lg text-blue-800">5000</p>
+                        class="w-12 h-12 my-2">
+
+                    <p class="pt-2 border-t-2 border-white text-lg text-blue-800">
+                        {% if area %}
+                        <span>{{ area }}</span>
+                        {% endif %}
+                    </p>
                 </div>
                 <!-- 02 bedroom -->
-                <div class="bedroom-sec bg-gray-100 rounded-md py-2 px-4 text-center ">
+                <div
+                    class="bedroom-sec bg-gray-100 rounded-md py-2 px-4 text-center w-28 flex flex-col justify-center items-center">
                     <p class="py-1 underline">Bedrooms</p>
                     <img src="{{ url_for('static', filename='assets/icons/bedroom.png') }}" alt="bedroom"
-                        class="w-16 h-16 my-2">
-                    <p class="pt-2 border-t-2 border-white text-lg text-blue-800">01</p>
+                        class="w-14 h-14 my-2">
+
+                    <p class="pt-2 border-t-2 border-white text-lg text-blue-800">
+                        {% if bedrooms %}
+                        <span>{{ bedrooms }}</span>
+                        {% endif %}
+                    </p>
+
                 </div>
 
                 <!-- 03 bathroom -->
-                <div class="bathroom-sec bg-gray-100 rounded-md py-2 px-4 text-center ">
+                <div
+                    class="bathroom-sec bg-gray-100 rounded-md py-2 px-4 text-center w-28 flex flex-col justify-center items-center">
                     <p class="py-1 underline">Bathrooms</p>
                     <img src="{{ url_for('static', filename='assets/icons/washroom2.png') }}" alt="bedroom"
-                        class="w-16 h-16 my-2">
-                    <p class="pt-2 border-t-2 border-white text-lg  text-blue-800">01</p>
+                        class="w-14 h-14 my-2">
+                    <p class="pt-2 border-t-2 border-white text-lg text-blue-800">
+                        {% if bathrooms %}
+                        <span>{{ bathrooms }}</span>
+                        {% endif %}
+                    </p>
                 </div>
 
                 <!-- 04 Storey -->
-                <div class="storey-sec bg-gray-100 rounded-md py-2 px-4 text-center ">
+                <div
+                    class="storey-sec bg-gray-100 rounded-md py-2 px-4 text-center w-28 flex flex-col justify-center items-center">
                     <p class="py-1 underline">Storey</p>
                     <img src="{{ url_for('static', filename='assets/icons/storey.png') }}" alt="bedroom"
-                        class="w-16 h-16 my-2">
-                    <p class="pt-2 border-t-2 border-white text-lg  text-blue-800">01</p>
+                        class="w-14 h-14 my-2">
+                    <p class="pt-2 border-t-2 border-white text-lg text-blue-800">
+                        {% if stories %}
+                        <span>{{ stories }}</span>
+                        {% endif %}
+                    </p>
                 </div>
 
                 <!-- 05 guestroom -->
-                <div class="guestroom-sec bg-gray-100 rounded-md py-2 px-4 text-center ">
+                <div
+                    class="guestroom-sec bg-gray-100 rounded-md py-2 px-4 text-center min-w-28 flex flex-col justify-center items-center">
                     <p class="py-1 underline">Guest Room</p>
                     <img src="{{ url_for('static', filename='assets/icons/guestroom.png') }}" alt="bedroom"
-                        class="w-16 h-16 my-2">
-                    <p class="pt-2 border-t-2 border-white text-lg text-blue-800">01</p>
+                        class="w-14 h-14 my-2">
+                    <p class="pt-2 border-t-2 border-white text-lg text-blue-800">
+                        {% if guestroom %}
+                        <span>{{ guestroom }}</span>
+                        {% endif %}
+                    </p>
                 </div>
 
                 <!-- 06 basement -->
-                <div class="basement-sec bg-gray-100 rounded-md py-2 px-4 text-center ">
+                <div
+                    class="basement-sec bg-gray-100 rounded-md py-2 px-4 text-center w-28 flex flex-col justify-center items-center">
                     <p class="py-1 underline">Basement</p>
                     <img src="{{ url_for('static', filename='assets/icons/basement.png') }}" alt="bedroom"
-                        class="w-16 h-16 my-2">
-                    <p class="pt-2 border-t-2 border-white text-lg text-blue-800">01</p>
+                        class="w-14 h-14 my-2">
+                    <p class="pt-2 border-t-2 border-white text-lg text-blue-800">
+                        {% if basement %}
+                        <span>{{ basement }}</span>
+                        {% endif %}
+                    </p>
                 </div>
 
             </div>
 
-            <div class="text-center text-center py-4 pt-5 text-red-600 text-xl ">
+            <div class="text-center text-center pt-8 pb-2 text-red-600 text-xl ">
                 {% if prediction %}
-                <h3>{{ prediction }}</h3>
+                <h3>Predicted Price: <b>{{ prediction }}</b></h3>
                 {% endif %}
             </div>
 
