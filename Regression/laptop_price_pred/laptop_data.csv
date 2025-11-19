@@ -1,0 +1,51 @@
+Brand,RAM,Storage,Weight,Screen Size,Battery Life (hours),Operating System,CPU,GPU,Build Quality,Display Quality,Warranty,Touchscreen,Backlit,Fingerprint,Color,Pre-Installed Softwares,Price
+Apple,32,1024,2.67,13.3,8,macOS,Apple M1,Apple Integrated,Excellent,Full HD,3,Yes,Yes,No,Grey,2,2145.6
+Lenovo,32,256,2.03,13.3,6,macOS,Intel i7,Intel Integrated,Poor,4K,2,Yes,Yes,Yes,Black,3,1633.4
+Dell,8,512,1.3,17,4,macOS,Intel i9,NVIDIA RTX 4060,Good,Full HD,1,,Yes,No,,4,1619.8
+Apple,8,1024,2.05,14,10,,Apple M1,Apple Integrated,Fair,,1,No,Yes,Yes,Grey,1,1724.6
+Dell,,512,1.43,17,8,Windows,AMD Ryzen 5,NVIDIA RTX 4060,Poor,4K,3,Yes,Yes,Yes,Blue,2,1707.8
+Lenovo,32,512,1.9,17,10,Linux,Intel i7,Intel Integrated,Excellent,HD,3,Yes,No,No,Grey,1,1751.8
+Apple,8,256,,13.3,6,macOS,Apple M1,Apple Integrated,Good,Full HD,1,Yes,No,No,,2,1222.4
+HP,16,1024,1.24,13.3,8,macOS,Apple M2,Intel Integrated,Excellent,4K,1,No,No,,Blue,3,2060.6
+Apple,4,,1.77,13.3,4,macOS,Apple M1,,Fair,HD,3,No,,No,Blue,4,920.4
+MSI,32,1024,2.15,13.3,6,Windows,Apple M2,Intel Integrated,Excellent,4K,1,Yes,Yes,,Blue,1,2284.6
+HP,4,2048,1.69,17,12,Linux,,Intel Integrated,Poor,Full HD,3,Yes,No,Yes,Silver,2,1207.2
+Acer,4,256,1.63,15.6,6,macOS,AMD Ryzen 7,Intel Integrated,,Full HD,1,,No,No,,3,837.4
+Lenovo,,2048,,15.6,6,Linux,AMD Ryzen 7,NVIDIA GTX 1650,Good,4K,1,Yes,Yes,No,Silver,2,2275.2
+Apple,32,2048,1.88,13.3,6,macOS,Apple M1,Apple Integrated,,HD,1,Yes,No,,Blue,3,2401.2
+Asus,4,512,2.33,14,6,macOS,Apple M1,NVIDIA RTX 3060,Excellent,HD,3,No,Yes,,Grey,3,1468.8
+Asus,16,2048,1.53,14,8,Linux,Intel i5,NVIDIA GTX 1650,Good,4K,0,,No,Yes,Red,5,2096.2
+HP,4,512,1.27,13.3,12,Linux,,NVIDIA GTX 1650,,4K,2,No,,No,Silver,6,1335.8
+Asus,8,256,2.93,14,4,macOS,Apple M2,Intel Integrated,Good,Full HD,0,No,No,Yes,Grey,7,916.4
+Lenovo,,512,2.57,14,10,macOS,AMD Ryzen 5,,Excellent,4K,3,Yes,No,Yes,Silver,2,1742.8
+HP,32,256,1.94,13.3,8,Linux,Intel i9,NVIDIA GTX 1650,Excellent,,0,Yes,No,Yes,Blue,2,1865.4
+MSI,32,2048,2.91,15.6,10,Linux,Intel i5,NVIDIA RTX 4060,,4K,1,Yes,No,No,Silver,3,2948.2
+Asus,4,2048,2.85,,12,Linux,AMD Ryzen 5,NVIDIA RTX 3060,Fair,4K,1,,Yes,Yes,Red,4,2004.2
+Lenovo,8,512,1.23,13.3,8,,Intel i7,NVIDIA RTX 4060,Fair,Full HD,3,No,Yes,Yes,Grey,5,1415.8
+HP,4,2048,1.93,17,4,macOS,Intel i5,NVIDIA GTX 1650,Good,4K,0,Yes,,Yes,Silver,2,2003.2
+Dell,16,,2.45,15.6,6,Linux,Apple M1,Intel Integrated,Poor,2K,3,Yes,No,No,Grey,1,1542.2
+Dell,4,2048,2.51,14,4,macOS,Intel i7,NVIDIA RTX 3060,Excellent,Full HD,2,No,Yes,No,Black,1,2324.2
+Dell,32,256,2.77,14,6,Linux,Intel i5,NVIDIA RTX 4060,Excellent,HD,0,Yes,Yes,Yes,Grey,2,1923.4
+Lenovo,4,2048,1.49,15.6,8,Linux,Apple M1,,Excellent,HD,1,No,No,Yes,Red,3,2089.2
+MSI,8,512,1.54,14,6,,Intel i9,NVIDIA RTX 4060,Excellent,HD,0,Yes,Yes,Yes,Red,4,1876.8
+Lenovo,32,1024,1.15,15.6,6,Linux,Apple M1,NVIDIA RTX 4060,Fair,2K,3,Yes,No,Yes,,4,2236.6
+Acer,4,512,2.19,17,6,Linux,Intel i7,,Excellent,2K,2,Yes,Yes,,Grey,3,1301.8
+Dell,32,256,2.01,15.6,10,Windows,,NVIDIA GTX 1650,Excellent,HD,1,Yes,No,Yes,Silver,3,1891.4
+Acer,4,2048,1.36,14,6,macOS,Intel i9,NVIDIA RTX 4060,Fair,,2,Yes,Yes,No,Black,5,2598.2
+Acer,8,256,2.53,13.3,8,Linux,Apple M2,Intel Integrated,Good,4K,3,,Yes,No,Grey,5,1467.4
+Acer,16,1024,,,8,,Intel i5,NVIDIA RTX 3060,Excellent,Full HD,0,No,No,No,Red,6,1995.6
+HP,4,512,2.47,13.3,12,Linux,Intel i7,NVIDIA RTX 4060,Excellent,HD,3,No,No,No,Red,6,1800.8
+Acer,8,2048,1.44,17,6,Linux,AMD Ryzen 7,AMD Radeon RX 5600M,Fair,2K,3,No,No,Yes,Red,,2039.2
+Apple,4,1024,1.86,13.3,6,macOS,Apple M1,Apple Integrated,Poor,2K,0,No,Yes,Yes,,,1499.6
+Acer,8,2048,1.06,13.3,10,macOS,Apple M2,NVIDIA RTX 4060,Good,HD,1,Yes,No,No,Blue,3,2181.2
+HP,32,1024,2.35,14,6,Windows,Intel i9,NVIDIA GTX 1650,Good,Full HD,1,No,Yes,No,Black,,2048.6
+Asus,16,256,1.66,,8,Linux,Intel i7,,Good,HD,3,Yes,Yes,No,Blue,4,1187.4
+Lenovo,16,256,2.1,15.6,4,Linux,AMD Ryzen 5,NVIDIA RTX 3060,Poor,4K,0,,Yes,,Silver,,1628.4
+Acer,8,256,2.87,14,4,,Intel i5,AMD Radeon RX 5600M,Poor,,2,No,No,Yes,,4,978.4
+HP,8,2048,1.65,13.3,4,Windows,Intel i7,NVIDIA GTX 1650,Good,HD,3,Yes,No,Yes,Red,3,2018.2
+HP,,256,,14,4,macOS,Apple M1,NVIDIA RTX 4060,Fair,4K,2,Yes,Yes,No,Blue,,1644.4
+MSI,8,2048,1.55,17,10,macOS,Intel i5,NVIDIA RTX 3060,Excellent,4K,1,No,Yes,Yes,Silver,3,2490.2
+Apple,,256,1.75,15.6,10,macOS,Apple M1,Apple Integrated,Fair,HD,2,Yes,No,No,Silver,,1673.4
+Apple,32,512,2.58,14,10,macOS,,Apple Integrated,,4K,0,Yes,No,Yes,Silver,4,2235.8
+Acer,32,,1.26,17,7,Windows,Intel i5,AMD Radeon RX 5600M,Fair,Full HD,0,Yes,No,No,,,1483.8
+Dell,32,512,2.86,15.6,12,Linux,Apple M1,NVIDIA GTX 1650,Good,Full HD,1,Yes,No,No,Silver,5,1403.8
